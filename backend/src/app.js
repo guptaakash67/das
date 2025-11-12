@@ -22,6 +22,19 @@ app.use((req, res, next) => {
   next();
 });
 
+// Root Route
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'Sales Analytics API',
+    version: '1.0.0',
+    availableRoutes: {
+      health: '/api/health',
+      upload: '/api/upload',
+      analytics: '/api/analytics'
+    }
+  });
+});
+
 // Health Check
 app.get('/api/health', (req, res) => {
   res.json({ 
