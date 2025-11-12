@@ -26,6 +26,40 @@ npm start
 
 3. Open http://localhost:3000 in your browser.
 
+Backend (API)
+1. Install backend dependencies:
+
+```powershell
+cd ../../backend
+npm ci
+```
+
+2. Create a `.env` file in `d:\\sales\\backend` with at least the following variables:
+
+```
+MONGODB_URI=mongodb://localhost:27017/salesdb
+PORT=5000
+CORS_ORIGIN=http://localhost:3000
+NODE_ENV=development
+```
+
+3. Start the backend server (development):
+
+```powershell
+npm run dev
+```
+
+4. Useful backend endpoints
+- `GET /` - Root route (API status)
+- `GET /api/health` - Health check
+- `POST /api/upload` - Upload CSV/Excel file (multipart form, field name `file`)
+- `GET /api/sales` - List sales (supports filters/pagination)
+- `GET /api/analytics/summary` - Summary analytics (revenue, orders, avg order value)
+- `GET /api/analytics/trends` - Sales trends
+- `GET /api/analytics/products` - Product-wise analytics
+
+Tip: You can run `npm run seed` in `backend` to load sample data if the `scripts/seed.js` exists.
+
 Notes on the screenshot
 - The screenshot shown above is expected to live at `frontend/sales/assets/screenshot.png`. I couldn't upload the binary image automatically — to show the screenshot on GitHub:
 	- Create the folder `frontend/sales/assets` and add the screenshot file `screenshot.png` there, or
