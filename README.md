@@ -1,6 +1,8 @@
 # Sales Analytics Dashboard
 
 This repository contains a Sales Analytics dashboard built with React and Tailwind CSS. It provides an interface to upload sales CSV/Excel files and visualize key metrics like revenue, orders, product-wise sales and regional breakdowns.
+<img width="611" height="622" alt="image" src="https://github.com/user-attachments/assets/483830d4-ecda-4f58-a034-4f681e170b23" />
+
 
 ![Sales Dashboard Screenshot](<img width="611" height="622" alt="image" src="https://github.com/user-attachments/assets/e4a95a8f-e5a4-40bc-9d12-cf9d7e0f8ab7" />)
 
