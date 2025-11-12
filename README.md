@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Sales Analytics Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a Sales Analytics dashboard built with React and Tailwind CSS. It provides an interface to upload sales CSV/Excel files and visualize key metrics like revenue, orders, product-wise sales and regional breakdowns.
 
-## Available Scripts
+![Sales Dashboard Screenshot](assets/screenshot.png)
 
-In the project directory, you can run:
+Why this project
+- Clean, responsive dashboard UI for sales insights
+- CSV/Excel upload and parsing
+- Charts for revenue trend, product-wise sales and regional distribution
 
-### `npm start`
+Quick start
+1. Install dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```powershell
+cd frontend/sales
+npm ci
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Start development server:
 
-### `npm test`
+```powershell
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Open http://localhost:3000 in your browser.
 
-### `npm run build`
+Notes on the screenshot
+- The screenshot shown above is expected to live at `frontend/sales/assets/screenshot.png`. I couldn't upload the binary image automatically — to show the screenshot on GitHub:
+	- Create the folder `frontend/sales/assets` and add the screenshot file `screenshot.png` there, or
+	- Replace the `![Sales Dashboard Screenshot](assets/screenshot.png)` link with a remote image URL.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Suggested README improvements I added
+- Short project description and features
+- Quick start commands tailored to this repo layout
+- Screenshot placeholder and path
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you want, I can also:
+- Add the `assets/` folder and commit the screenshot if you upload the image here, or
+- Create a short `README.md` at the repository root summarizing backend + frontend and linking into `frontend/sales`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+How I verified
+- Confirmed the React app starts locally after installing PostCSS deps and other fixes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Next steps (optional)
+- I can commit and push this README update right now. If you want the screenshot included in the repo, upload it here or tell me where to fetch it and I will add it and push.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
